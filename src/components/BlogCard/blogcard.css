@@ -1,0 +1,59 @@
+/* Blog Part */
+.blog-card {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Đảm bảo thẻ Card chiếm toàn bộ chiều cao có sẵn */
+    overflow: hidden;
+}
+
+.blog-card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.blog-content {
+    padding: 15px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Đảm bảo nội dung và nút được phân bố đều */
+}
+
+.blog-content .date {
+    font-size: 13px;
+    line-height: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    font-weight: 400;
+    color: var(--color-777777);
+}
+
+.blog-content p.desc {
+    font-size: 13px;
+    line-height: 22px;
+    color: var(--color-777777);
+    margin-bottom: 15px; /* Tạo khoảng cách giữa mô tả và nút */
+    flex-grow: 1;
+    overflow: hidden; /* Ẩn phần văn bản tràn */
+    text-overflow: ellipsis; /* Thêm dấu ba chấm nếu văn bản bị cắt */
+}
+
+.custom-button {
+    background-color: var(--color-232f3e);
+    color: white;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: none;
+    width: 100%;
+    text-align: center;
+}
+
+.custom-button:hover {
+    background-color: var(--color-febd69) !important;
+    color: black !important;
+}
+/* Blog Part end */

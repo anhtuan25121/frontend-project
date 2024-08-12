@@ -1,0 +1,20 @@
+/* Special Product */
+.special-product-card{
+    padding: 20px 10px;
+    border-radius: 10px;
+    background-color: white;
+}
+.add-cart-button {
+    background-color: var(--color-232f3e) ;
+    color: white;
+    font-size: 14px;
+    padding: 13px 33px;
+    border-radius: 25px;
+    border: none; 
+  }
+  
+  .add-cart-button:hover {
+    background-color: var(--color-febd69)!important; 
+    color: black !important; 
+  }
+/* Special Product end */

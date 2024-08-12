@@ -1,0 +1,142 @@
+/* Product Card */
+.product-card {
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.product-image {
+    width: 270px;
+    height: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.zoom-container {
+    overflow: hidden;
+    position: relative;
+}
+
+.zoomable {
+    transition: transform 0.3s ease-in-out;
+}
+
+.zoom-image:hover {
+    transform: scale(1.2);
+}
+
+.product-card .product-image>img {
+    display: block;
+}
+
+.product-image img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.product-card:hover .action-bar {
+    right: 15px;
+}
+
+.product-card .product-details h6 {
+    color: var(--color-bf4800);
+    font-size: 13px;
+}
+
+.product-card .product-details h5 {
+    color: var(--color-1c1c1b);
+    font-size: 15px;
+}
+
+.product-card .product-details p.price {
+    color: var(--color-1c1c1b);
+    font-size: 16px;
+}
+
+.product-card p.discription {
+    font-size: 13px;
+    color: var(--color-777777);
+    margin-right: 20px;
+}
+
+.action-bar {
+    top: 60px;
+    right: 15px; 
+    transition: 0.3s;
+}
+
+.wishlist-icon {
+    top: 15px; 
+    right: 15px;
+}
+.wishlist-icon img, 
+.action-bar img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+}
+
+.wishlist-icon img:hover, 
+.action-bar img:hover {
+    transform: scale(1.5);
+    filter: grayscale(0%);
+}
+.action-bar {
+    top: 60px;
+    right: 15px;
+    transition: 0.3s;
+}
+
+.wishlist-icon {
+    top: 15px;
+    right: 15px;
+}
+
+.gr-12 {
+    width: 100%;
+}
+
+.gr-6 {
+    width: 49%;
+}
+
+.gr-4 {
+    width: 32%;
+}
+
+.gr-3 {
+    width: 24%;
+}
+
+.gr-12 .product-card {
+    display: flex;
+    gap: 20px
+}
+
+.gr-12 .product-card .product-image {
+    width: 270px;
+    height: auto;
+}
+
+.gr-12 .action-bar {
+    top: 17%;
+}
+
+.gr-4 .product-image {
+    width: 100%;
+}
+
+.gr-4 .product-image img {
+    margin: auto;
+    display: block;
+}
+/* Product Card end*/
